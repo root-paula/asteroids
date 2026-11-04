@@ -1,6 +1,6 @@
 import pygame
 
-from constants import SCREEN_HEIGHT, SCREEN_WIDTH
+from constants import SCREEN_BG_COLOR, SCREEN_HEIGHT, SCREEN_WIDTH
 from logger import log_state
 
 
@@ -17,7 +17,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
-        screen.fill("black")
+        screen.fill(SCREEN_BG_COLOR)
         pygame.display.flip()
 
 
